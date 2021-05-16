@@ -1,0 +1,12 @@
+.documents-main {
+    position: fixed;
+    top: 0%;
+    left:0%;
+    height: 100%;
+    text-align: center;
+    margin: 50px;
+    width:90%
+}
+iframe {
+    height:90%;
+}
