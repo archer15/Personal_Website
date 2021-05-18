@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from "react";
+//import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router, Switch, Route, Link
 } from "react-router-dom"
@@ -11,7 +11,7 @@ import Projects from './pages/projects.js'
 
 
 // ..
-AOS.init();
+
 
 const padding = {
   padding: 10
@@ -50,9 +50,7 @@ const App = () => {
     
     <div className="App-footer"><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />Thank you for visiting my personal website. </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script></div>
+  </div>
   );
 }
 
