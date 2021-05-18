@@ -6,7 +6,7 @@ import {
 import About from './pages/about.js'
 import Home from './pages/home.js'
 import Documents from './pages/documents.js'
-import AOS from 'aos';
+
 import Projects from './pages/projects.js'
 
 
