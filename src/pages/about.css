@@ -1,0 +1,51 @@
+.about-main {
+    
+        position: fixed;
+        top: 10%;
+        width: 90%;
+        left:5%;
+       background: crimson;
+       border-radius: 5px;
+       padding:10px;
+       overflow-wrap: break-word;
+}
+h2 {
+  text-align: center;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 350px;
+    background:rgb(13, 21, 26); /* Should be removed. Only for demonstration */
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(29,161,242);
+    border-radius: 50px;
+    margin:20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .popup {
+    font-size: 100px;
+    position: absolute;
+    top :10%;
+    left:10%;
+
+  }
+  ul:hover {
+    color:black;
+  }
+  .bottomCard {
+    position: absolute;
+    bottom:10%;
+    left:30%;
+  }

@@ -1,0 +1,17 @@
+.home-main {
+    position: fixed;
+    top: 15%;
+    right:30%;
+    text-align: center;
+}
+.home-image{
+    position: fixed;
+    top: 1%;
+    right:1%;
+    border: 10px;
+    color: rgb(29,161,242);
+
+}
+img {
+    border-radius: 50%;
+  }
