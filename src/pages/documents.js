@@ -4,7 +4,6 @@ import my_cv from './JoshuaArcher_CV_2021.pdf'
 const Documents = () => {
     return (
         <div> 
-            
             <div className="documents-main">
                 
                 <iframe src={my_cv} title="title" width="1050" height="1000">
