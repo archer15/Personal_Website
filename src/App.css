@@ -44,8 +44,8 @@ a:active {
 }
 
 .img_link {
-  background-color: white;
-  border-radius: 10%;
+ 
+  border-radius: 0%;
 }
 .App-footer {
   position: absolute;

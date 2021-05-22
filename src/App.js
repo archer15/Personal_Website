@@ -25,7 +25,7 @@ const App = () => {
             <Link style={padding} to ="/"> Home </Link>
             <Link style={padding} to ="/about"> About </Link>
             <Link style={padding} to ="/projects"> Projects  </Link>
-            <a href= {my_cv} target="_blank"> Resume</a>
+            <a href= {my_cv} target="_blank"> Resume <i class="fas fa-file"></i></a>
           </div>
           <div className="App-links">
          

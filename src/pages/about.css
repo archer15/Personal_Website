@@ -49,3 +49,45 @@ h2 {
     bottom:10%;
     left:30%;
   }
+  
+  .mouse_over{
+    padding:30px;
+   }
+   .mouse_over_right {
+     padding: 30px;
+     text-align: right;
+   }
+  #p1 {
+    display:none;
+  }
+  #p2 {
+    display:none;
+  }
+  #p3 {
+    display:none;
+  }
+  #p4 {
+    display:none;
+  }
+  #m1 {
+    display:none;
+  }
+  #m2 {
+    display:none;
+  }
+  #m3 {
+    display:none;
+  }
+  #m4 {
+    display:none;
+  }
+  #m5 {
+    display:none;
+  }
+  li{
+    padding:2px;
+  }
+  #indent {
+    padding-left:20px;
+    list-style-type:circle;
+  }
