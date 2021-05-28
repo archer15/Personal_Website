@@ -1,18 +1,80 @@
 * {
     box-sizing: border-box;
   }
- 
-  /* Create two equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
+
+.projects-main {
+  position: fixed;
+  top:5%;
+  left:36%;
+      padding: 20px;
+    display: flex;  
+  flex-wrap:wrap;
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  display: block
+}
+.project-2-text {
+  position: relative;
+  width:100%;
+  
+}
+
+
+
+
+
+.card-1 {
+  padding: 5px;
+  margin:20px;
+  margin-bottom: 40px;
+  background-color:rgb(18, 72, 110);
+  padding:10px;
+  width:200px;
+  height:200px;
+  font-size: 8px;
+  transition:1s;
+}
+.card-2 {
+  
+  padding: 5px;
+  margin:20px;
+  margin-bottom: 40px;
+  background-color:rgb(18, 72, 110);
+  padding:10px;
+  width:200px;
+  height:200px;
+  font-size: 8px;
+  transition:1s;
+  overflow:hidden;
+}
+.card-3 {
+  padding: 5px;
+  margin:20px;
+  margin-bottom: 40px;
+  background-color:rgb(18, 72, 110);
+  padding:10px;
+  width:200px;
+  height:200px;
+  font-size: 8px;
+  transition:1s;
+}
+
+.card-1:hover {
+  width:600px;
+  margin-left:-150px;
+  height:400px;
+  font-size: 16px;
+}
+.card-2:hover {
+  width:600px;
+  margin-left:-150px;
+  height:400px;
+  font-size: 16px;
+  
+  
+}
+.card-3:hover {
+  width:600px;
+  margin-left:-150px;
+  height:400px;
+  font-size: 16px;
+}

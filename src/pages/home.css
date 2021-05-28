@@ -3,6 +3,8 @@
     top: 15%;
     right:35%;
     text-align: center;
+    
+    
 }
 .home-image{
     position: fixed;
@@ -10,7 +12,7 @@
     right:1%;
     border: 10px;
     color: rgb(29,161,242);
-
+    
 }
 img {
     border-radius: 50%;

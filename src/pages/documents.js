@@ -1,5 +1,5 @@
 import './documents.css';
-import Iframe from 'react-iframe'
+
 import my_cv from './JoshuaArcher_CV_2021.pdf'
 const Documents = () => {
     return (

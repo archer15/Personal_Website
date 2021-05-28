@@ -1,5 +1,5 @@
 import './about.css';
-import PersonalFitness from './about_list/personal_fitness'
+
 const add1 = () => { 
   document.getElementById("p1").style.display = "block";
 }
@@ -58,19 +58,19 @@ const About = () => {
 
     return (
         <div className="about-main"><h1>About Me</h1>
-            <div class="row">
-              <div class="column" >
+            <div className="row">
+              <div className="column" >
                 <h2>Personal Hobbies</h2>
-                  <div class="card">
+                  <div className="card">
                     <ul onMouseOver={add1} onMouseLeave={remove1} >Personal Fitness</ul>
                     <ul onMouseOver={add2} onMouseLeave={remove2}>Music </ul>
                     <ul onMouseOver={add3} onMouseLeave={remove3}>Creative Software Projects</ul>
                     <ul onMouseOver={add4} onMouseLeave={remove4}>Video Games</ul>
                   </div>
               </div>
-              <div class="column" >
+              <div className="column" >
                 <h2>Main Software Interests</h2>
-                  <div class="card" >
+                  <div className="card" >
                     <ul onMouseOver={add5} onMouseLeave={remove5} >Web Development / App Development</ul>
                     <ul onMouseOver={add6} onMouseLeave={remove6}>Systems Architecture and Design </ul>
                     <ul onMouseOver={add7} onMouseLeave={remove7}>Video Games Development</ul>
