@@ -5,7 +5,7 @@ import {
 } from "react-router-dom"
 import About from './pages/about.js'
 import Home from './pages/home.js'
-
+import JA_logo from './JA_logo.PNG'
 import Projects from './pages/projects.js'
 import my_cv from './pages/JoshuaArcher_CV_2021.pdf'
 import linkedin_image from './pages/linkedin.png'
@@ -16,7 +16,8 @@ const padding = {
 const App = () => {
   return (
     <div className="App-main">
-      <div className="App-title">Portfolio.</div>
+      <div className="App-title">Portfolio. <img src={JA_logo} alt="Joshua Archer" width="40" height="35" className="logo_img">
+        </img></div>
       <div className="App-router">
           <Router>
           

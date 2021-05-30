@@ -42,7 +42,9 @@ a:active {
   top:1%;
   right:3%;
 }
-
+.logo_img {
+  border-radius: 0%;
+}
 .img_link {
  
   border-radius: 0%;
