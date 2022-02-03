@@ -26,7 +26,7 @@
      * default document font size = 16px, 1rem = 16px, 100% = 16px
      * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
     */
-    font-size: 62.5%;
+    font-size: 100;
     scroll-behavior: smooth;
   }
   
@@ -48,21 +48,32 @@
   /* 1200px / 16px = 75em */
   @media (max-width: 75em) {
     html {
-      font-size: 60%;
+      font-size: 100%;
     }
+    
   }
+  @media (min-width: 61.25em) {
+    .popup {
+      
+      width:80%;
+      
+      
+    }
+    
+  }
+  
   
   /* 980px / 16px = 61.25em */
   @media (max-width: 61.25em) {
     html {
-      font-size: 58%;
+      font-size: 75%;
     }
   }
   
   /* 460px / 16px = 28.75em */
   @media (max-width: 28.75em) {
     html {
-      font-size: 55%;
+      font-size: 65%;
     }
   }
   
@@ -136,7 +147,7 @@
   
   .nav-list a {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1rem;
   }
   
@@ -320,22 +331,56 @@
     transition: transform 0.3s ease-out;
     
   }
-  
- 
-  #contact-button {
+  .submit-btn {
+    background-color: var(--main-gray);
+    color: var(--main-white)
+  }
+  .cancel-btn {
+    background-color: var(--main-red) !important;
+    min-width: 100%;
+    height:40px;
+    color: var(--main-white) !important;
+  }
+  input, textarea, .submit-button, .cancel-btn{
+    font-size:1.2rem;
+    font-family: 'Poppins', sans-serif;
+    min-width:100%;
+    background-color: rgb(225, 225, 225);
+    color:#000;
+    
     
   }
   
+  
+  #myForm{
+    border: 20px solid var(--main-blue);
+    display:none;
+  }
+  .query-form{
+    min-width: 100%;
+    resize: vertical;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    min-height: 20rem;
+    
+  }
   .contact-card:hover {
     transform: translateY(8px);
     color: #ff7f50;
 
   }
-  
+  .popup{
+    position: absolute;
+  display: inline-block;
+ 
+  background:  var(--main-blue)
+  }
   /* Footer */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
+    
   }
+  
   footer {
     font-weight: 300;
     display: flex;
@@ -343,14 +388,20 @@
     padding: 2rem;
     background: var(--main-gray);
     border-top: 4px solid var(--main-red);
+    
   }
   
   footer > p {
     margin: 2rem;
+    
+  }
+  footer > a {
+    color: #ff7f50 ;
   }
   
   footer i {
     vertical-align: middle;
+    
   }
   
   @media (max-width: 28.75em) {

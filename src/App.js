@@ -1,7 +1,7 @@
 
-import { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import profile_pic from './img/Profile_pic.jpg'
-
+import emailjs from '@emailjs/browser';
 import './App.css'
 import port_img from './Port_img/portfolio_1.PNG'
 import swapstreet_1 from './Port_img/swapstreet_1.PNG'
@@ -11,8 +11,22 @@ import swapstreet_4 from './Port_img/swapstreet_4.PNG'
 import swapstreet_5 from './Port_img/swapstreet_5.PNG'
 import startpage_1 from './Port_img/StartPage_1.PNG'
 import startpage_2 from './Port_img/StartPage_2.PNG'
-import my_cv from './img/JoshuaArcher_CV_2021.pdf'
+import my_cv from './img/CV_JoshuaArcher_2022.pdf'
 const App = () => {
+    const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs.init('user_K95w9BHocwRGG1mlLpMoc');
+      emailjs.sendForm('contact_service', 'contact_form', this)
+      .then((result) => {
+        console.log(result.text);
+
+      }, (error) => {
+        console.log(error.text)
+      })
+    }
+
+
   const openForm = () => {
     document.getElementById("myForm").style.display = "block";
   }
@@ -103,17 +117,20 @@ const App = () => {
           <a href="https://github.com/archer15" target="_blank" rel="noreferrer" className="contact-card">GitHub </a>
           <a href={my_cv} target="_blank" rel="noreferrer" className="contact-card">Download Résumé </a>
           <a href="#contact" rel="noreferrer" className="contact-card" onClick={openForm} id='contact-button'>Contact Me </a>
-          <div class="form-popup" id="myForm">
-            <form action='/form_page' className='form-container'>
+          <div className="popup" id="myForm">
+            <form ref={form} onSubmit={sendEmail} action='/form_page' className='form-container'>
               <h1>Send me an email</h1>
+              <label for='name'><b>Your name</b></label>
+              <input required type='text' placeholder='Enter your name' name='user_name'></input>
               <label for='email'><b>Your Email</b></label>
-              <input required type='email' placeholder='enter email' name='email'></input>
+              <input required type='email' placeholder='enter email' name='user_email'></input>
               <br></br>
               <label for='message'><b>Ask me a question?</b></label>
-              <input required type='text' autoComplete='off' placeholder='Enter a message which will be sent to me directly.' name='message' ></input>
+              <textarea className='query-form' required type='text' autoComplete='off' placeholder='Enter a message which will be sent to me directly.' name='message' ></textarea>
+              <input type="submit" className="submit-btn" value="Send"/>
             </form>
             
-            <button type="button" className='cancel' onClick={closeForm}>Close Email Form</button>
+            <button type="button" className='cancel-btn' onClick={closeForm}>Close Email Form</button>
           </div>
         </section>
       </div>
